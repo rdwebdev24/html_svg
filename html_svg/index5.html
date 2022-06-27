@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+          }
+
+          svg{
+               width: 300px;
+               height: 300px;
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50% , -50%);
+          }
+          /* for rohit and first svg */
+          #Vector_1{
+               stroke-dasharray: 7000;
+               stroke-dashoffset: 7000;
+               animation: animate 10s linear forwards;
+          }
+          @keyframes animate {
+               100%{
+                    stroke-dashoffset: 0;
+               }
+          }
+
+        
+     </style>
+</head>
+<body>
+     <svg width="720" height="600" viewBox="0 0 720 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path id="Vector_1" d="M3 597H62.5V282.5H151V597H181.5V96H218V597H268.5V215H387.5V597H477.5V339H529V142H610V597H717V3H477.5V282.5H430V96H268.5V3H151V215H62.5V3H3V510" stroke="url(#paint0_linear_2_4)" stroke-width="5"/>
+          <defs>
+          <linearGradient id="paint0_linear_2_4" x1="360" y1="3" x2="360" y2="597" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#FF0000"/>
+          <stop offset="1" stop-color="#00F0FF"/>
+          </linearGradient>
+          </defs>
+          </svg>
+               
+</body>
+</html>

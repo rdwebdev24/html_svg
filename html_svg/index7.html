@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+          }
+
+          svg{
+               width: 100px;
+               height: 100px;
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50% , -50%);
+          }
+          #check{
+              stroke-dasharray: 220;
+              stroke-dashoffset: 220;
+              stroke-width: 2;
+              stroke: #fff;
+              fill: transparent;
+              animation: animate 2s linear forwards;
+          }
+          @keyframes animate {
+               100%{
+                    fill: #fff;
+                    stroke-dashoffset: 0;
+               }
+          }
+     </style>
+</head>
+<body>
+     <svg width="127" height="122" viewBox="0 0 127 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse id="circle" cx="63.5" cy="61" rx="63.5" ry="61" fill="#00BA00"/>
+          <path id="check" d="M45.3791 60.9653L38.4814 53.6365C36.8979 51.954 34.6899 51 32.3795 51H29.8151C26.6035 51 24 53.6035 24 56.8151C24 58.2236 24.5112 59.5843 25.4388 60.6443L45.2375 83.2714C48.9429 87.5061 55.4113 87.8511 59.5461 84.0344L101.539 45.272C103.108 43.8237 104 41.7856 104 39.6504C104 35.4252 100.575 32 96.3496 32H96.01C94.0699 32 92.196 32.7059 90.7382 33.986L59.2592 61.6261C55.2101 65.1814 49.0722 64.8892 45.3791 60.9653Z"/>
+          </svg>
+          
+</body>
+</html>

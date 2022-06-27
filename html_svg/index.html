@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          .container{
+               border: 2px solid red;
+               width: 500px;
+               height: 500px;
+               margin: 0 auto;
+          }
+          .text{
+               fill: red;
+               stroke: none;
+               font-size: 15px;
+               font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          }
+          .subtext{
+               fill: green;
+          }
+          .rectangle{
+               fill: orange;
+               stroke: red;
+               stroke-width: 1;
+               stroke-opacity: 1;
+               /* stroke-linejoin: miter;
+               stroke-linejoin: round;
+               stroke-linejoin: bevel; */
+                stroke-dasharray: 2 , 2;
+               /* stroke-dasharray: 4,1,2; */
+               stroke-dashoffset: 1;
+          }
+          .line{
+               stroke: blue;
+               stroke-width: 5;
+               /* stroke-linecap: square;
+               stroke-linecap: round; */
+          }
+          .star{
+               fill: orange;
+               fill-opacity: 1;
+               fill-rule:evenodd;
+          }
+          .reactangle2{
+               stroke-dasharray: 4 , 2;
+               stroke: red;
+               fill: orange;
+          }
+     </style>
+</head>
+<body>
+     <div class="container">
+          <svg viewBox = "0 0 100 100">
+              
+
+                    <!-- <line x1="20" y1="30" x2="80" y2="30" stroke="blue"></line>
+                    <line x1="80" y1="30" x2="80" y2="60" stroke="red"></line>
+                    <line x1="80" y1="60" x2="20" y2="30" stroke="green"></line> -->
+
+
+                    <!-- <rect x="10" y="30" width="80" height="40" rx="5" ry="3" stroke="none" fill="red"></rect> -->
+                    <!-- <rect x="5" y="25" width="80" height="40" rx="5" ry="3" stroke="none" fill="pink"></rect> -->
+                    <!-- <rect x="0" y="20" width="80" height="40" rx="5" ry="3" stroke="none" fill="orange"></rect> -->
+                    <!-- <rect x="5" y="15" width="80" height="40" rx="5" ry="3" stroke="none" fill="blue"></rect> -->
+                    <!-- <rect x="10" y="10" width="80" height="40" rx="5" ry="3" stroke="none" fill="green"></rect> -->
+
+
+                    <!-- <circle cx="0" cy="0" r="30" fill="pink"></circle>
+                    <circle cx="100" cy="100" r="30" fill="pink"></circle> -->
+
+
+                    <!-- <ellipse cx="50" cy="50" rx="20" ry="40" stroke="red"></ellipse>
+                    <ellipse cx="50" cy="50" rx="20" ry="40" stroke="orange" style="transform: rotate(50deg); transform-origin:center"></ellipse> -->
+
+
+                    <!-- <polyline points="40,20 80,20 60,40 45,35 40,20" fill="pink" stroke="black"></polyline> -->
+
+                    <!-- <polygon points="40,20 80,40 50,60 20,40" fill="pink" stroke="black"></polygon> -->
+<!-- PATH ELEMENT -->
+                    <!-- <path d="M20,40 L80,40 L80,70 L20,70 Z" fill="none" stroke="blue"></path> -->
+                    <!-- <path d="M20,40 H80 V70 H20 Z" fill="none" stroke="blue"></path> -->
+
+<!-- CUBIC BEZIER CURVE -->
+                    <!-- <path d="M10,50 C-20,70 100,70 70,50" fill="none" stroke="blue"></path> -->
+                    <!-- <path d="M10,50 C20,80 40,80 50,50 S70,20 90,50" fill="none" stroke="blue"></path> -->
+<!-- QUADRATIC BEZIER CURVE -->
+                         <!-- <path d="M10,50 Q30,10 50,50" stroke="red" fill="none"></path> -->
+                         <!-- <path d="M10,50 Q50,30 50,50 T90,50" stroke="red" fill="none"></path> -->
+<!-- ARC COMMAND -->
+                         <!-- <path d="M10,50 A50,30 0 0,1 90,50 V80 H10 Z" stroke="blue" fill="none"></path> -->
+<!-- TEXT ELEMENT -->
+                       <!--  <text class="text" x="20" y="50" text-anchor="start">Yahoo 
+                             <tspan class="subtext" dy="10" dx="-10">Baba</tspan>          dx and dy are relative position with rspect to original 
+                          </text>                                                           end , start , middle -->
+<!-- STROKE PROPERTY  -->
+                          <!-- <rect class="rectangle" x="10"  y="50" width="80" height="40"></rect>
+                          <line class="line" x1="20" y1="20" x2="80" y2="20"></line> -->
+
+                          <!-- <path class="star" d="M50,20 80,80 10,40 90,40 20,80 Z" stroke="red"></path> -->
+
+<!-- REUSING ELEMENT -->
+                         <!-- <symbol id="first" viewBox="0 0 500 500">  
+                              <rect class="reactangle2" x="20" y="30" width="20" height="20" ></rect>
+                         </symbol>
+                         <symbol id="second">
+                              <rect  class="reactangle2" x="20" y="30" width="20" height="20" ></rect>
+                         </symbol>
+                          <use xlink:href="#first" x="50" y="10" ></use>
+                          <use  xlink:href="#second" x="-10" y="20" ></use> -->
+
+                          <!-- symbol has a seperate viewbox -->
+<!--  TEXT IN PATH -->
+                          <!-- <path id="shape" d="M20 70 Q50,30 100,70" stroke="red" style="stroke-width: 1;" fill="none"></path>
+                          <text>
+                               <textpath xlink:href="#shape">
+                                   Yahoo baba
+                               </textpath>
+                          </text> -->
+
+<!-- Defs TAGS  -->
+
+                         <!-- <defs id="first">  
+                              <g id="first">
+                                   <rect class="reactangle2" x="20" y="30" width="20" height="20" ></rect>
+                                   <circle cx="0" cy="0" r="30" fill="pink"></circle>
+                              </g>
+                         </defs>
+                         <defs id="second">
+                              <rect  class="reactangle2" x="20" y="30" width="20" height="20" ></rect>
+                         </defs>
+                          <use xlink:href="#first" x="50" y="10" ></use>
+                          <use  xlink:href="#second" x="-10" y="20" ></use> -->
+
+
+          </svg>
+     </div>
+</body>
+</html>
